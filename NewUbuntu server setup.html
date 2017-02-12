@@ -1,0 +1,60 @@
+
+Ununtu Server Inital setup via Virtualbox LAMP, webmin, phpmyadmin, cups, ssmtp, rsyslog, VPN
+sudo apt-get install dkms
+
+/etc/hosts
+/etc/hostname
+
+***Verify installed apps 
+Apache webserver
+Mysql
+PHP
+
+sudo mv /var/www/html/index.html /var/www/html/index.html.org
+sudo nano /var/www/html/index.html
+
+<html>
+<header><title>This is title</title></header>
+<body>
+Hello world
+</body>
+</html>
+
+sudo nano /var/www/html/phpinfo.php
+<?php
+phpinfo();
+?>
+
+mysqladmin -u root -p status
+
+add the repos for webmin
+sudo nano /etc/apt/sources.list.d/webmin.list
+deb http://download.webmin.com/download/repository sarge contrib
+
+deb http://download.webmin.com/download/repository sarge contrib
+
+cd ~/
+wget http://www.webmin.com/jcameron-key.asc
+sudo apt-key add jcameron-key.asc
+
+sudo apt-get update
+
+https://help.ubuntu.com/lts/serverguide/cups.html
+
+sudo apt-get install apache2-utils webmin phpmyadmin cups ssmtp openvpn easy-rsa
+
+make sure you pick apache2 or install directory for webmin
+
+verify webmin by logging into the server using port :10000
+verify phpmyadmin http://localhost/phpmyadmin login in with root
+
+https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-ubuntu-16-04
+
+<?>
+
+
+
+
+
+
+
