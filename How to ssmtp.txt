@@ -1,0 +1,26 @@
+How to ssmtp
+sudo apt-get install ssmtp
+sudo mv /etc/ssmtp/ssmtp.conf /etc/ssmtp/ssmtp.conf.org
+sudo nano /etc/ssmtp/ssmtp.conf
+
+paste this in the end
+
+Root=viet760.logs@gmail.com
+Mailhub=smtp.gmail.com:465
+RewriteDomain=gmail.com
+AuthUser=viet760.logs # (before the @gmail.com part)
+AuthPass=**********put password in here****************
+FromLineOverride=Yes
+UseTLS=Yes
+
+sudo apt-get install heirloom-mailx -y
+
+echo "Testing" | mail -s "Test Email" viet760@gmail.com 
+
+
+
+sudo apt-get install heirloom-mailx -y
+
+echo testing|mail -s 'Test Mail' viet760.logs@gmail.com
+
+Authorization failed (534 5.7.14  https://support.google.com/mail/answer/78754 b83sm7987849pfe.12 - gsmtp
