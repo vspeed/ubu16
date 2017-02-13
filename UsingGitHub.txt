@@ -1,2 +1,3 @@
 # Steps for utilizing Git Hub and the desktop application
 #Files can be created on your local machine. Once the file is saved to the predetermined directory, the desktop Git app is alterted of a new file. The new file is in an unknown state. Git will prompt you to comment and commit the file. This basically means give the file a title. Then give a brief descrition of the content of the file or any changes that have been performed to the file. 
+Kraken is an open dource desktop client that is Windows and MAC compatible.
